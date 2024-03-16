@@ -34,7 +34,6 @@ static double GetMax(int[] numbers)
 
     return maxValue;
 }
-
-int[] numbers2 = { 1, 2, 3, 4 };
+int[] numbers2 = {1, 2, 3, 4};
 double max = GetMax(numbers2);
 Console.WriteLine(max);
