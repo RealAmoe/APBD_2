@@ -8,7 +8,7 @@ Console.WriteLine("It's 18:29");
 static double GetAverage(int[] numbers)
 {
     double sum = 0.0;
-    foreach (var number in numbers)
+    foreach (int number in numbers)
     {
         sum += number;
     }
