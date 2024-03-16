@@ -16,6 +16,25 @@ static double GetAverage(int[] numbers)
     return sum / numbers.Length;
 }
 
-int[] numbers = {1, 2, 3, 4};
-double average = GetAverage(numbers);
+int[] numbers1 = {1, 2, 3, 4};
+double average = GetAverage(numbers1);
 Console.WriteLine(average);
+
+
+static double GetMax(int[] numbers)
+{
+    int maxValue = numbers[0];
+    foreach (var number in numbers)
+    {
+        if (number > maxValue)
+        {
+            maxValue = number;
+        }
+    }
+
+    return maxValue;
+}
+
+int[] numbers2 = { 1, 2, 3, 4 };
+double max = GetMax(numbers2);
+Console.WriteLine(max);
